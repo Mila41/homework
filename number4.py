@@ -19,4 +19,11 @@ my_favorite_songs = (
 )
 
 r_songs = random.choices(my_favorite_songs, k=3)
-print(f'Три песни звучат: ', r_songs)
+print(f'Три песни звучат: ', sum([song[1] for song in r_songs]))
+
+# # Либо подробнее
+# lgth = 0 
+# for song in r_songs:
+#     lgth += song[1]
+
+# print(f'Три песни звучат: ', lgth)
